@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D2AD5312470673000FF1460 /* PinView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2AD5272470673000FF1460 /* PinView.framework */; };
+		2D2AD5312470673000FF1460 /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2AD5272470673000FF1460 /* Framework.framework */; };
 		2D2AD5362470673000FF1460 /* PinViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD5352470673000FF1460 /* PinViewTests.swift */; };
 		2D2AD5382470673000FF1460 /* PinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2AD52A2470673000FF1460 /* PinView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -23,10 +23,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D2AD5272470673000FF1460 /* PinView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AD5272470673000FF1460 /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2AD52A2470673000FF1460 /* PinView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
 		2D2AD52B2470673000FF1460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D2AD5302470673000FF1460 /* PinViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AD5302470673000FF1460 /* FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2AD5352470673000FF1460 /* PinViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewTests.swift; sourceTree = "<group>"; };
 		2D2AD5372470673000FF1460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2AD5312470673000FF1460 /* PinView.framework in Frameworks */,
+				2D2AD5312470673000FF1460 /* Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +62,8 @@
 		2D2AD5282470673000FF1460 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD5272470673000FF1460 /* PinView.framework */,
-				2D2AD5302470673000FF1460 /* PinViewTests.xctest */,
+				2D2AD5272470673000FF1460 /* Framework.framework */,
+				2D2AD5302470673000FF1460 /* FrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D2AD5262470673000FF1460 /* PinView */ = {
+		2D2AD5262470673000FF1460 /* Framework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinView" */;
+			buildConfigurationList = 2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "Framework" */;
 			buildPhases = (
 				2D2AD5222470673000FF1460 /* Headers */,
 				2D2AD5232470673000FF1460 /* Sources */,
@@ -113,14 +113,14 @@
 			);
 			dependencies = (
 			);
-			name = PinView;
+			name = Framework;
 			productName = PinView;
-			productReference = 2D2AD5272470673000FF1460 /* PinView.framework */;
+			productReference = 2D2AD5272470673000FF1460 /* Framework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D2AD52F2470673000FF1460 /* PinViewTests */ = {
+		2D2AD52F2470673000FF1460 /* FrameworkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinViewTests" */;
+			buildConfigurationList = 2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "FrameworkTests" */;
 			buildPhases = (
 				2D2AD52C2470673000FF1460 /* Sources */,
 				2D2AD52D2470673000FF1460 /* Frameworks */,
@@ -131,9 +131,9 @@
 			dependencies = (
 				2D2AD5332470673000FF1460 /* PBXTargetDependency */,
 			);
-			name = PinViewTests;
+			name = FrameworkTests;
 			productName = PinViewTests;
-			productReference = 2D2AD5302470673000FF1460 /* PinViewTests.xctest */;
+			productReference = 2D2AD5302470673000FF1460 /* FrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "PinView" */;
+			buildConfigurationList = 2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "Framework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -167,8 +167,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D2AD5262470673000FF1460 /* PinView */,
-				2D2AD52F2470673000FF1460 /* PinViewTests */,
+				2D2AD5262470673000FF1460 /* Framework */,
+				2D2AD52F2470673000FF1460 /* FrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,7 +211,7 @@
 /* Begin PBXTargetDependency section */
 		2D2AD5332470673000FF1460 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D2AD5262470673000FF1460 /* PinView */;
+			target = 2D2AD5262470673000FF1460 /* Framework */;
 			targetProxy = 2D2AD5322470673000FF1460 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,7 +424,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "PinView" */ = {
+		2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD5392470673000FF1460 /* Debug */,
@@ -433,7 +433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinView" */ = {
+		2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD53C2470673000FF1460 /* Debug */,
@@ -442,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinViewTests" */ = {
+		2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "FrameworkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD53F2470673000FF1460 /* Debug */,
