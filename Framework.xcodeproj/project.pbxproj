@@ -10,6 +10,9 @@
 		2D2AD5312470673000FF1460 /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2AD5272470673000FF1460 /* Framework.framework */; };
 		2D2AD5362470673000FF1460 /* PinViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD5352470673000FF1460 /* PinViewTests.swift */; };
 		2D2AD5382470673000FF1460 /* PinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2AD52A2470673000FF1460 /* PinView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D2AD54724706D1600FF1460 /* UIStackViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD54624706D1600FF1460 /* UIStackViewExt.swift */; };
+		2D2AD54924706D6E00FF1460 /* PinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD54824706D6E00FF1460 /* PinTextField.swift */; };
+		2D2AD54B24706F8500FF1460 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD54A24706F8500FF1460 /* PinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		2D2AD5302470673000FF1460 /* FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2AD5352470673000FF1460 /* PinViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewTests.swift; sourceTree = "<group>"; };
 		2D2AD5372470673000FF1460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2AD54624706D1600FF1460 /* UIStackViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExt.swift; sourceTree = "<group>"; };
+		2D2AD54824706D6E00FF1460 /* PinTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTextField.swift; sourceTree = "<group>"; };
+		2D2AD54A24706F8500FF1460 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,8 @@
 		2D2AD54124706BA400FF1460 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2D2AD54824706D6E00FF1460 /* PinTextField.swift */,
+				2D2AD54A24706F8500FF1460 /* PinView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 		2D2AD54324706BE800FF1460 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D2AD54624706D1600FF1460 /* UIStackViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,6 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2AD54724706D1600FF1460 /* UIStackViewExt.swift in Sources */,
+				2D2AD54924706D6E00FF1460 /* PinTextField.swift in Sources */,
+				2D2AD54B24706F8500FF1460 /* PinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +432,7 @@
 		2D2AD53F2470673000FF1460 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H78F7NL94V;
 				INFOPLIST_FILE = PinViewTests/Info.plist;
@@ -438,6 +451,7 @@
 		2D2AD5402470673000FF1460 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H78F7NL94V;
 				INFOPLIST_FILE = PinViewTests/Info.plist;
