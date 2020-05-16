@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D2AD5312470673000FF1460 /* Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2AD5272470673000FF1460 /* Framework.framework */; };
+		2D2AD5312470673000FF1460 /* PinView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2AD5272470673000FF1460 /* PinView.framework */; };
 		2D2AD5362470673000FF1460 /* PinViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD5352470673000FF1460 /* PinViewTests.swift */; };
-		2D2AD5382470673000FF1460 /* PinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2AD52A2470673000FF1460 /* PinView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D964A4A2470A60700D3D292 /* PinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A432470A60700D3D292 /* PinTextField.swift */; };
+		2D964A4B2470A60700D3D292 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A442470A60700D3D292 /* PinView.swift */; };
+		2D964A4C2470A60700D3D292 /* UIStackViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A472470A60700D3D292 /* UIStackViewExt.swift */; };
+		2D964A4D2470A60700D3D292 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D964A482470A60700D3D292 /* Info.plist */; };
+		2D964A4E2470A60700D3D292 /* PinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D964A492470A60700D3D292 /* PinView.h */; };
+		2D964A522470A63A00D3D292 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D964A512470A63A00D3D292 /* README.md */; };
+		2D964A542470A64200D3D292 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A532470A64200D3D292 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2D2AD5272470673000FF1460 /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D2AD52A2470673000FF1460 /* PinView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
-		2D2AD52B2470673000FF1460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D2AD5302470673000FF1460 /* FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AD5272470673000FF1460 /* PinView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AD5302470673000FF1460 /* PinViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2AD5352470673000FF1460 /* PinViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewTests.swift; sourceTree = "<group>"; };
 		2D2AD5372470673000FF1460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D964A432470A60700D3D292 /* PinTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTextField.swift; sourceTree = "<group>"; };
+		2D964A442470A60700D3D292 /* PinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		2D964A472470A60700D3D292 /* UIStackViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExt.swift; sourceTree = "<group>"; };
+		2D964A482470A60700D3D292 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D964A492470A60700D3D292 /* PinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
+		2D964A512470A63A00D3D292 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2D964A532470A64200D3D292 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2AD5312470673000FF1460 /* Framework.framework in Frameworks */,
+				2D2AD5312470673000FF1460 /* PinView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +64,8 @@
 		2D2AD51D2470673000FF1460 = {
 			isa = PBXGroup;
 			children = (
-				2D2AD5292470673000FF1460 /* PinView */,
+				2D964A402470A60600D3D292 /* Sources */,
+				2D964A502470A62400D3D292 /* RootFiles */,
 				2D2AD5342470673000FF1460 /* PinViewTests */,
 				2D2AD5282470673000FF1460 /* Products */,
 			);
@@ -62,21 +74,10 @@
 		2D2AD5282470673000FF1460 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD5272470673000FF1460 /* Framework.framework */,
-				2D2AD5302470673000FF1460 /* FrameworkTests.xctest */,
+				2D2AD5272470673000FF1460 /* PinView.framework */,
+				2D2AD5302470673000FF1460 /* PinViewTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2D2AD5292470673000FF1460 /* PinView */ = {
-			isa = PBXGroup;
-			children = (
-				2D2AD54224706BAC00FF1460 /* Global */,
-				2D2AD52A2470673000FF1460 /* PinView.h */,
-				2D2AD54124706BA400FF1460 /* Sources */,
-				2D2AD52B2470673000FF1460 /* Info.plist */,
-			);
-			path = PinView;
 			sourceTree = "<group>";
 		};
 		2D2AD5342470673000FF1460 /* PinViewTests */ = {
@@ -88,26 +89,57 @@
 			path = PinViewTests;
 			sourceTree = "<group>";
 		};
-		2D2AD54124706BA400FF1460 /* Sources */ = {
+		2D964A402470A60600D3D292 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2D964A412470A60600D3D292 /* PinView */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		2D2AD54224706BAC00FF1460 /* Global */ = {
+		2D964A412470A60600D3D292 /* PinView */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD54324706BE800FF1460 /* Extensions */,
+				2D964A422470A60600D3D292 /* Sources */,
+				2D964A452470A60700D3D292 /* Global */,
+				2D964A482470A60700D3D292 /* Info.plist */,
+				2D964A492470A60700D3D292 /* PinView.h */,
+			);
+			path = PinView;
+			sourceTree = "<group>";
+		};
+		2D964A422470A60600D3D292 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D964A432470A60700D3D292 /* PinTextField.swift */,
+				2D964A442470A60700D3D292 /* PinView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D964A452470A60700D3D292 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2D964A462470A60700D3D292 /* Extensions */,
 			);
 			path = Global;
 			sourceTree = "<group>";
 		};
-		2D2AD54324706BE800FF1460 /* Extensions */ = {
+		2D964A462470A60700D3D292 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D964A472470A60700D3D292 /* UIStackViewExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D964A502470A62400D3D292 /* RootFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D964A512470A63A00D3D292 /* README.md */,
+				2D964A532470A64200D3D292 /* Package.swift */,
+			);
+			name = RootFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,16 +149,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2AD5382470673000FF1460 /* PinView.h in Headers */,
+				2D964A4E2470A60700D3D292 /* PinView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D2AD5262470673000FF1460 /* Framework */ = {
+		2D2AD5262470673000FF1460 /* PinView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "Framework" */;
+			buildConfigurationList = 2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinView" */;
 			buildPhases = (
 				2D2AD5222470673000FF1460 /* Headers */,
 				2D2AD5232470673000FF1460 /* Sources */,
@@ -137,14 +169,14 @@
 			);
 			dependencies = (
 			);
-			name = Framework;
+			name = PinView;
 			productName = PinView;
-			productReference = 2D2AD5272470673000FF1460 /* Framework.framework */;
+			productReference = 2D2AD5272470673000FF1460 /* PinView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D2AD52F2470673000FF1460 /* FrameworkTests */ = {
+		2D2AD52F2470673000FF1460 /* PinViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "FrameworkTests" */;
+			buildConfigurationList = 2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinViewTests" */;
 			buildPhases = (
 				2D2AD52C2470673000FF1460 /* Sources */,
 				2D2AD52D2470673000FF1460 /* Frameworks */,
@@ -155,9 +187,9 @@
 			dependencies = (
 				2D2AD5332470673000FF1460 /* PBXTargetDependency */,
 			);
-			name = FrameworkTests;
+			name = PinViewTests;
 			productName = PinViewTests;
-			productReference = 2D2AD5302470673000FF1460 /* FrameworkTests.xctest */;
+			productReference = 2D2AD5302470673000FF1460 /* PinViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "Framework" */;
+			buildConfigurationList = 2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "PinView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -192,8 +224,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D2AD5262470673000FF1460 /* Framework */,
-				2D2AD52F2470673000FF1460 /* FrameworkTests */,
+				2D2AD5262470673000FF1460 /* PinView */,
+				2D2AD52F2470673000FF1460 /* PinViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D964A522470A63A00D3D292 /* README.md in Resources */,
+				2D964A4D2470A60700D3D292 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D964A542470A64200D3D292 /* Package.swift in Sources */,
+				2D964A4B2470A60700D3D292 /* PinView.swift in Sources */,
+				2D964A4C2470A60700D3D292 /* UIStackViewExt.swift in Sources */,
+				2D964A4A2470A60700D3D292 /* PinTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +274,7 @@
 /* Begin PBXTargetDependency section */
 		2D2AD5332470673000FF1460 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D2AD5262470673000FF1460 /* Framework */;
+			target = 2D2AD5262470673000FF1460 /* PinView */;
 			targetProxy = 2D2AD5322470673000FF1460 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -420,6 +458,7 @@
 		2D2AD53F2470673000FF1460 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H78F7NL94V;
 				INFOPLIST_FILE = PinViewTests/Info.plist;
@@ -438,6 +477,7 @@
 		2D2AD5402470673000FF1460 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H78F7NL94V;
 				INFOPLIST_FILE = PinViewTests/Info.plist;
@@ -456,7 +496,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "Framework" */ = {
+		2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "PinView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD5392470673000FF1460 /* Debug */,
@@ -465,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "Framework" */ = {
+		2D2AD53B2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD53C2470673000FF1460 /* Debug */,
@@ -474,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "FrameworkTests" */ = {
+		2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD53F2470673000FF1460 /* Debug */,
