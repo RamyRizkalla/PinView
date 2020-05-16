@@ -25,6 +25,7 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "PinViewTests",
+            path: "PinViewTests",
             dependencies: ["PinView"]),
     ]
 )
