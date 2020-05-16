@@ -22,10 +22,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "PinView",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources"),
         .testTarget(
             name: "PinViewTests",
-            path: "PinViewTests",
-            dependencies: ["PinView"]),
+            dependencies: ["PinView"],
+            path: "PinViewTests"),
     ]
 )
