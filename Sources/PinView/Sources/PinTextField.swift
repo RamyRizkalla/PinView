@@ -5,11 +5,12 @@ import UIKit
 
 protocol PinTextFieldDelegate: AnyObject {
     func textFieldWillDelete(_ textField: UITextField)
+    func textFieldDidDelete(_ textField: UITextField)
 }
 
 class PinTextField: UITextField {
     var frameSizeConstraint: NSLayoutConstraint?
-    weak var pinTextFielddelegate: PinTextFieldDelegate?
+    weak var pinFieldDelegate: PinTextFieldDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,8 +32,9 @@ class PinTextField: UITextField {
     }
     
     override func deleteBackward() {
-        pinTextFielddelegate?.textFieldWillDelete(self)
+        pinFieldDelegate?.textFieldWillDelete(self)
         super.deleteBackward()
+        pinFieldDelegate?.textFieldDidDelete(self)
     }
     
     private func setupView() {
