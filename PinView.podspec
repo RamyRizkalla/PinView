@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "PinView"
-  spec.version      = "1.0.0"
+  spec.version      = "0.0.1"
   spec.summary      = "A library that customizes PIN and OTP Views."
   spec.description  = "A library that customizes PIN and OTP Views."
   spec.homepage     = "https://github.com/RamyRizkalla/PinView.git"
@@ -17,6 +17,6 @@ Pod::Spec.new do |spec|
   spec.author       = "Ramy Rizkalla"
   spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/RamyRizkalla/PinView.git", :tag => "#{spec.version}" }
-  spec.source_files  = "PinView", "PinView/**/*.{h,m,swift}"
-  spec.public_header_files = "PinView/**/*.h"
+  spec.source_files  = "Sources", "Sources/PinView/**/*.{h,m,swift}"
+  #spec.public_header_files = "PinView/**/*.h"
 end
