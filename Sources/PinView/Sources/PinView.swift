@@ -4,16 +4,6 @@ import Foundation
 import UIKit
 
 public class PinView: UIStackView {
-    private var textFields: [PinTextField] = [PinTextField]()
-    
-    var enteredPinCode: String {
-        let x = textFields.map { $0.text! }
-        return x.joined()
-    }
-    
-    var hidOnTyping: Bool = true
-    var numberPfPins: Int = 4
-
     @IBInspectable var borderColor: UIColor = .clear {
         didSet {
             textFields.forEach { $0.layer.borderColor = borderColor.cgColor }
@@ -73,6 +63,16 @@ public class PinView: UIStackView {
             textFields.filter { !$0.isFirstResponder }.forEach { $0.frameSizeConstraint?.constant = unselectedSize }
         }
     }
+
+    public var enteredPinCode: String {
+        return textFields.map { $0.text! }.joined()
+    }
+    
+    private var textFields: [PinTextField] = [PinTextField]()
+    
+    var showPin: Bool = true
+    var numberOfPINCharacters: Int = 4
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -85,7 +85,7 @@ public class PinView: UIStackView {
     }
 
     private func setupTextFields() {
-        for i in 1...numberPfPins {
+        for i in 1...numberOfPINCharacters {
             let textField = PinTextField()
             textField.tag = i
             textFields.append(textField)
@@ -136,7 +136,7 @@ extension PinView: UITextFieldDelegate {
         textField.backgroundColor = unselectedBackgroundColor
         (textField as? PinTextField)?.frameSizeConstraint?.constant = unselectedSize
         textField.layer.cornerRadius = unselectedCornerRadius
-        if hidOnTyping, textField.text != "" {
+        if showPin, textField.text != "" {
             (textField as? PinTextField)?.hideBackground()
         }
     }
@@ -149,11 +149,11 @@ extension PinView: PinTextFieldDelegate {
         if pinField.text == "" {
             let previousPinField = textFields.first { $0.tag == pinField.tag - 1 }
             previousPinField?.text = ""
-            if hidOnTyping {
+            if showPin {
                 previousPinField?.showBackground(borderWidth: borderWidth, borderColor: borderColor, background: selectedBackgroundColor)
             }
         } else {
-            if hidOnTyping {
+            if showPin {
                 pinField.showBackground(borderWidth: borderWidth, borderColor: borderColor, background: selectedBackgroundColor)
             }
         }

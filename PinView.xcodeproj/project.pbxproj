@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2D2AD5312470673000FF1460 /* PinView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2AD5272470673000FF1460 /* PinView.framework */; };
-		2D2AD5362470673000FF1460 /* PinViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD5352470673000FF1460 /* PinViewTests.swift */; };
+		2D2AD5362470673000FF1460 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD5352470673000FF1460 /* Tests.swift */; };
 		2D964A4A2470A60700D3D292 /* PinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A432470A60700D3D292 /* PinTextField.swift */; };
 		2D964A4B2470A60700D3D292 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A442470A60700D3D292 /* PinView.swift */; };
 		2D964A4C2470A60700D3D292 /* UIStackViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A472470A60700D3D292 /* UIStackViewExt.swift */; };
 		2D964A552470AB8C00D3D292 /* PinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D964A492470A60700D3D292 /* PinView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		773A0D63247FCF6F00889960 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0D62247FCF6F00889960 /* UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,8 @@
 
 /* Begin PBXFileReference section */
 		2D2AD5272470673000FF1460 /* PinView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D2AD5302470673000FF1460 /* PinViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D2AD5352470673000FF1460 /* PinViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewTests.swift; sourceTree = "<group>"; };
+		2D2AD5302470673000FF1460 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2AD5352470673000FF1460 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		2D2AD5372470673000FF1460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D964A432470A60700D3D292 /* PinTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTextField.swift; sourceTree = "<group>"; };
 		2D964A442470A60700D3D292 /* PinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
@@ -37,6 +38,10 @@
 		2D964A492470A60700D3D292 /* PinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
 		2D964A512470A63A00D3D292 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D964A532470A64200D3D292 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		773A0D59247FCF1900889960 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A0D5D247FCF1900889960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773A0D62247FCF6F00889960 /* UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		773A0D64247FD49800889960 /* PinView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		773A0D56247FCF1900889960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,7 +75,8 @@
 			children = (
 				2D964A402470A60600D3D292 /* Sources */,
 				2D964A502470A62400D3D292 /* RootFiles */,
-				2D2AD5342470673000FF1460 /* PinViewTests */,
+				2D2AD5342470673000FF1460 /* Tests */,
+				773A0D5A247FCF1900889960 /* UITests */,
 				2D2AD5282470673000FF1460 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,18 +85,19 @@
 			isa = PBXGroup;
 			children = (
 				2D2AD5272470673000FF1460 /* PinView.framework */,
-				2D2AD5302470673000FF1460 /* PinViewTests.xctest */,
+				2D2AD5302470673000FF1460 /* Tests.xctest */,
+				773A0D59247FCF1900889960 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D2AD5342470673000FF1460 /* PinViewTests */ = {
+		2D2AD5342470673000FF1460 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2D2AD5352470673000FF1460 /* PinViewTests.swift */,
+				2D2AD5352470673000FF1460 /* Tests.swift */,
 				2D2AD5372470673000FF1460 /* Info.plist */,
 			);
-			path = PinViewTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		2D964A402470A60600D3D292 /* Sources */ = {
@@ -135,8 +149,18 @@
 			children = (
 				2D964A512470A63A00D3D292 /* README.md */,
 				2D964A532470A64200D3D292 /* Package.swift */,
+				773A0D64247FD49800889960 /* PinView.podspec */,
 			);
 			name = RootFiles;
+			sourceTree = "<group>";
+		};
+		773A0D5A247FCF1900889960 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				773A0D62247FCF6F00889960 /* UITests.swift */,
+				773A0D5D247FCF1900889960 /* Info.plist */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +195,9 @@
 			productReference = 2D2AD5272470673000FF1460 /* PinView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2D2AD52F2470673000FF1460 /* PinViewTests */ = {
+		2D2AD52F2470673000FF1460 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinViewTests" */;
+			buildConfigurationList = 2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				2D2AD52C2470673000FF1460 /* Sources */,
 				2D2AD52D2470673000FF1460 /* Frameworks */,
@@ -184,10 +208,27 @@
 			dependencies = (
 				2D2AD5332470673000FF1460 /* PBXTargetDependency */,
 			);
-			name = PinViewTests;
+			name = Tests;
 			productName = PinViewTests;
-			productReference = 2D2AD5302470673000FF1460 /* PinViewTests.xctest */;
+			productReference = 2D2AD5302470673000FF1460 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		773A0D58247FCF1900889960 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773A0D5E247FCF1900889960 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				773A0D55247FCF1900889960 /* Sources */,
+				773A0D56247FCF1900889960 /* Frameworks */,
+				773A0D57247FCF1900889960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 773A0D59247FCF1900889960 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,7 +236,7 @@
 		2D2AD51E2470673000FF1460 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Ramy Rizkalla";
 				TargetAttributes = {
@@ -205,6 +246,10 @@
 					};
 					2D2AD52F2470673000FF1460 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					773A0D58247FCF1900889960 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -222,7 +267,8 @@
 			projectRoot = "";
 			targets = (
 				2D2AD5262470673000FF1460 /* PinView */,
-				2D2AD52F2470673000FF1460 /* PinViewTests */,
+				2D2AD52F2470673000FF1460 /* Tests */,
+				773A0D58247FCF1900889960 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +282,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D2AD52E2470673000FF1460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773A0D57247FCF1900889960 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,7 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2AD5362470673000FF1460 /* PinViewTests.swift in Sources */,
+				2D2AD5362470673000FF1460 /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773A0D55247FCF1900889960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A0D63247FCF6F00889960 /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +516,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H78F7NL94V;
-				INFOPLIST_FILE = PinViewTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +535,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H78F7NL94V;
-				INFOPLIST_FILE = PinViewTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +543,49 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramyrizkalla.PinViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		773A0D5F247FCF1900889960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J99SH72J9;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramyrizkalla.pinview.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITests/UITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		773A0D60247FCF1900889960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J99SH72J9;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramyrizkalla.pinview.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UITests/UITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -508,11 +612,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "PinViewTests" */ = {
+		2D2AD53E2470673000FF1460 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D2AD53F2470673000FF1460 /* Debug */,
 				2D2AD5402470673000FF1460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773A0D5E247FCF1900889960 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773A0D5F247FCF1900889960 /* Debug */,
+				773A0D60247FCF1900889960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
