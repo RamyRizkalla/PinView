@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "PinView"
-  spec.version      = "1.0.0"
+  spec.version      = "0.0.1"
   spec.summary      = "A library that customizes PIN and OTP Views."
   spec.description  = "A library that customizes PIN and OTP Views."
   spec.homepage     = "https://github.com/RamyRizkalla/PinView.git"
