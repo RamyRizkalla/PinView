@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "PinView"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A library that customizes PIN and OTP Views."
   spec.description  = <<-DESC
                     PinView is a library that uses UIStackView along with UITextFields to create a PIN view that is used for entering PIN Code. It's highly customizable allowing different views.
