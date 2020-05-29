@@ -10,12 +10,15 @@ Pod::Spec.new do |spec|
   spec.name         = "PinView"
   spec.version      = "0.0.1"
   spec.summary      = "A library that customizes PIN and OTP Views."
-  spec.description  = "A library that customizes PIN and OTP Views."
+  spec.description  = <<-DESC
+                    PinView is a library that uses UIStackView along with UITextFields to create a PIN view that is used for entering PIN Code. It's highly customizable allowing different views.
+                        DESC
   spec.homepage     = "https://github.com/RamyRizkalla/PinView.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = "Ramy Rizkalla"
   spec.platform     = :ios, "11.0"
+  spec.swift_versions = "5.0"
   spec.source       = { :git => "https://github.com/RamyRizkalla/PinView.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources", "Sources/PinView/**/*.{h,m,swift}"
   #spec.public_header_files = "PinView/**/*.h"
