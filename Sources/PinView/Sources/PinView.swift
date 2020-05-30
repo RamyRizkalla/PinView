@@ -71,8 +71,11 @@ public class PinView: UIStackView {
     private var textFields: [PinTextField] = [PinTextField]()
     
     public var showPin: Bool = true
-    public var numberOfPINCharacters: Int = 4
-
+    public var numberOfPINCharacters: Int = 4 {
+        didSet {
+            setupTextFields()
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -85,31 +88,39 @@ public class PinView: UIStackView {
     }
 
     private func setupTextFields() {
+        clearPreviousTextFields()
         for i in 1...numberOfPINCharacters {
             let textField = PinTextField()
             textField.tag = i
             textFields.append(textField)
         }
+        
+        setTextFields()
+        setStackProperties()
+        addArrangedSubviews(textFields)
+        textFields.first?.becomeFirstResponder()
+    }
+    
+    private func clearPreviousTextFields() {
+        removeArrangedSubviews(textFields)
+        textFields.removeAll()
+    }
 
+    private func setTextFields() {
         textFields.forEach {
             $0.clipsToBounds = true
             $0.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
             $0.pinFieldDelegate = self
             $0.delegate = self
         }
-        
-        configureScrollView()
-        addArrangedSubviews(textFields)
-        textFields.first?.becomeFirstResponder()
     }
-    
-    private func configureScrollView() {
+
+    private func setStackProperties() {
         translatesAutoresizingMaskIntoConstraints = false
         axis = .horizontal
         distribution = .equalSpacing
         alignment = .center
     }
-    
 }
 
 extension PinView: UITextFieldDelegate {

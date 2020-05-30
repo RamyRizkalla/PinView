@@ -139,10 +139,10 @@
 		2D964A412470A60600D3D292 /* PinView */ = {
 			isa = PBXGroup;
 			children = (
-				2D964A422470A60600D3D292 /* Sources */,
 				2D964A452470A60700D3D292 /* Global */,
 				2D964A482470A60700D3D292 /* Info.plist */,
 				2D964A492470A60700D3D292 /* PinView.h */,
+				2D964A422470A60600D3D292 /* Sources */,
 			);
 			path = PinView;
 			sourceTree = "<group>";
