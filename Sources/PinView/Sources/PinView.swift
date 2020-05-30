@@ -4,61 +4,61 @@ import Foundation
 import UIKit
 
 public class PinView: UIStackView {
-    @IBInspectable var borderColor: UIColor = .clear {
+    @IBInspectable public var borderColor: UIColor = .clear {
         didSet {
             textFields.forEach { $0.layer.borderColor = borderColor.cgColor }
         }
     }
 
-    @IBInspectable var borderWidth: CGFloat = 0.0 {
+    @IBInspectable public var borderWidth: CGFloat = 0.0 {
         didSet {
             textFields.forEach { $0.layer.borderWidth = borderWidth }
         }
     }
 
-    @IBInspectable var font: UIFont = UIFont.systemFont(ofSize: 15) {
+    @IBInspectable public var font: UIFont = UIFont.systemFont(ofSize: 15) {
         didSet {
             textFields.forEach { $0.font = font }
         }
     }
 
-    @IBInspectable var textColor: UIColor = .black {
+    @IBInspectable public var textColor: UIColor = .black {
         didSet {
             textFields.forEach { $0.font = font }
         }
     }
 
-    @IBInspectable var selectedBackgroundColor: UIColor = .white {
+    @IBInspectable public var selectedBackgroundColor: UIColor = .white {
         didSet {
             textFields.first { $0.isFirstResponder }?.backgroundColor = selectedBackgroundColor
         }
     }
 
-    @IBInspectable var selectedSize: CGFloat = 25.0 {
+    @IBInspectable public var selectedSize: CGFloat = 25.0 {
         didSet {
             textFields.first { $0.isFirstResponder }?.frameSizeConstraint?.constant = selectedSize
         }
     }
 
-    @IBInspectable var selectedCornerRadius: CGFloat = 0.0 {
+    @IBInspectable public var selectedCornerRadius: CGFloat = 0.0 {
         didSet {
             textFields.first { $0.isFirstResponder }?.layer.cornerRadius = selectedCornerRadius
         }
     }
 
-    @IBInspectable var unselectedBackgroundColor: UIColor = .white {
+    @IBInspectable public var unselectedBackgroundColor: UIColor = .white {
         didSet {
             textFields.filter { !$0.isFirstResponder }.forEach { $0.backgroundColor = unselectedBackgroundColor }
         }
     }
 
-    @IBInspectable var unselectedCornerRadius: CGFloat = 0.0 {
+    @IBInspectable public var unselectedCornerRadius: CGFloat = 0.0 {
         didSet {
             textFields.filter { !$0.isFirstResponder }.forEach { $0.layer.cornerRadius = unselectedCornerRadius }
         }
     }
 
-    @IBInspectable var unselectedSize: CGFloat = 25.0 {
+    @IBInspectable public var unselectedSize: CGFloat = 25.0 {
         didSet {
             textFields.filter { !$0.isFirstResponder }.forEach { $0.frameSizeConstraint?.constant = unselectedSize }
         }
@@ -70,8 +70,8 @@ public class PinView: UIStackView {
     
     private var textFields: [PinTextField] = [PinTextField]()
     
-    var showPin: Bool = true
-    var numberOfPINCharacters: Int = 4
+    public var showPin: Bool = true
+    public var numberOfPINCharacters: Int = 4
 
     
     override init(frame: CGRect) {
