@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PinView",
+        "repositoryURL": "https://github.com/RamyRizkalla/PinView.git",
+        "state": {
+          "branch": null,
+          "revision": "197ad853cf3f892d0cdd40ae87f887498e7bfa8a",
+          "version": "0.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

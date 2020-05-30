@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,16 @@
 		2D964A4C2470A60700D3D292 /* UIStackViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A472470A60700D3D292 /* UIStackViewExt.swift */; };
 		2D964A552470AB8C00D3D292 /* PinView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D964A492470A60700D3D292 /* PinView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		773A0D63247FCF6F00889960 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0D62247FCF6F00889960 /* UITests.swift */; };
+		773A0D6D248162FE00889960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0D6C248162FE00889960 /* AppDelegate.swift */; };
+		773A0D6F248162FE00889960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0D6E248162FE00889960 /* SceneDelegate.swift */; };
+		773A0D71248162FE00889960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A0D70248162FE00889960 /* ViewController.swift */; };
+		773A0D74248162FE00889960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773A0D72248162FE00889960 /* Main.storyboard */; };
+		773A0D762481630100889960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A0D752481630100889960 /* Assets.xcassets */; };
+		773A0D792481630100889960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773A0D772481630100889960 /* LaunchScreen.storyboard */; };
+		773A0D812482885000889960 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A442470A60700D3D292 /* PinView.swift */; };
+		773A0D822482885C00889960 /* PinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A432470A60700D3D292 /* PinTextField.swift */; };
+		773A0D832482886C00889960 /* UIStackViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D964A472470A60700D3D292 /* UIStackViewExt.swift */; };
+		773A0D862482898A00889960 /* PinView in Frameworks */ = {isa = PBXBuildFile; productRef = 773A0D852482898A00889960 /* PinView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,14 @@
 		773A0D5D247FCF1900889960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773A0D62247FCF6F00889960 /* UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		773A0D64247FD49800889960 /* PinView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PinView.podspec; sourceTree = "<group>"; };
+		773A0D6A248162FE00889960 /* PinViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A0D6C248162FE00889960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		773A0D6E248162FE00889960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		773A0D70248162FE00889960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		773A0D73248162FE00889960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		773A0D752481630100889960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		773A0D782481630100889960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		773A0D7A2481630100889960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		773A0D67248162FE00889960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A0D862482898A00889960 /* PinView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +103,7 @@
 				2D964A502470A62400D3D292 /* RootFiles */,
 				2D2AD5342470673000FF1460 /* Tests */,
 				773A0D5A247FCF1900889960 /* UITests */,
+				773A0D6B248162FE00889960 /* PinViewDemo */,
 				2D2AD5282470673000FF1460 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +114,7 @@
 				2D2AD5272470673000FF1460 /* PinView.framework */,
 				2D2AD5302470673000FF1460 /* Tests.xctest */,
 				773A0D59247FCF1900889960 /* UITests.xctest */,
+				773A0D6A248162FE00889960 /* PinViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +191,20 @@
 			path = UITests;
 			sourceTree = "<group>";
 		};
+		773A0D6B248162FE00889960 /* PinViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				773A0D6C248162FE00889960 /* AppDelegate.swift */,
+				773A0D6E248162FE00889960 /* SceneDelegate.swift */,
+				773A0D70248162FE00889960 /* ViewController.swift */,
+				773A0D72248162FE00889960 /* Main.storyboard */,
+				773A0D752481630100889960 /* Assets.xcassets */,
+				773A0D772481630100889960 /* LaunchScreen.storyboard */,
+				773A0D7A2481630100889960 /* Info.plist */,
+			);
+			path = PinViewDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -230,6 +272,26 @@
 			productReference = 773A0D59247FCF1900889960 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		773A0D69248162FE00889960 /* PinViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773A0D7D2481630100889960 /* Build configuration list for PBXNativeTarget "PinViewDemo" */;
+			buildPhases = (
+				773A0D66248162FE00889960 /* Sources */,
+				773A0D67248162FE00889960 /* Frameworks */,
+				773A0D68248162FE00889960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinViewDemo;
+			packageProductDependencies = (
+				773A0D852482898A00889960 /* PinView */,
+			);
+			productName = PinViewDemo;
+			productReference = 773A0D6A248162FE00889960 /* PinViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +313,9 @@
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
 					};
+					773A0D69248162FE00889960 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 2D2AD5212470673000FF1460 /* Build configuration list for PBXProject "PinView" */;
@@ -262,6 +327,9 @@
 				Base,
 			);
 			mainGroup = 2D2AD51D2470673000FF1460;
+			packageReferences = (
+				773A0D842482898A00889960 /* XCRemoteSwiftPackageReference "PinView" */,
+			);
 			productRefGroup = 2D2AD5282470673000FF1460 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +337,7 @@
 				2D2AD5262470673000FF1460 /* PinView */,
 				2D2AD52F2470673000FF1460 /* Tests */,
 				773A0D58247FCF1900889960 /* UITests */,
+				773A0D69248162FE00889960 /* PinViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +361,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773A0D68248162FE00889960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A0D792481630100889960 /* LaunchScreen.storyboard in Resources */,
+				773A0D762481630100889960 /* Assets.xcassets in Resources */,
+				773A0D74248162FE00889960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +403,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		773A0D66248162FE00889960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A0D71248162FE00889960 /* ViewController.swift in Sources */,
+				773A0D832482886C00889960 /* UIStackViewExt.swift in Sources */,
+				773A0D6D248162FE00889960 /* AppDelegate.swift in Sources */,
+				773A0D812482885000889960 /* PinView.swift in Sources */,
+				773A0D822482885C00889960 /* PinTextField.swift in Sources */,
+				773A0D6F248162FE00889960 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -333,6 +425,25 @@
 			targetProxy = 2D2AD5322470673000FF1460 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		773A0D72248162FE00889960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773A0D73248162FE00889960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		773A0D772481630100889960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773A0D782481630100889960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2D2AD5392470673000FF1460 /* Debug */ = {
@@ -591,6 +702,44 @@
 			};
 			name = Release;
 		};
+		773A0D7B2481630100889960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J99SH72J9;
+				INFOPLIST_FILE = PinViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramyrizkalla.pinview.PinViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		773A0D7C2481630100889960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J99SH72J9;
+				INFOPLIST_FILE = PinViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramyrizkalla.pinview.PinViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -630,7 +779,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		773A0D7D2481630100889960 /* Build configuration list for PBXNativeTarget "PinViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773A0D7B2481630100889960 /* Debug */,
+				773A0D7C2481630100889960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		773A0D842482898A00889960 /* XCRemoteSwiftPackageReference "PinView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RamyRizkalla/PinView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		773A0D852482898A00889960 /* PinView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 773A0D842482898A00889960 /* XCRemoteSwiftPackageReference "PinView" */;
+			productName = PinView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D2AD51E2470673000FF1460 /* Project object */;
 }
