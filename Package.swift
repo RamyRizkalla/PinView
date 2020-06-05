@@ -23,7 +23,10 @@ let package = Package(
         .target(
             name: "PinView",
             dependencies: [],
-            path: "Sources"),
+            path: "Sources",
+            resources: [
+                .process("Sources/PinView/NunitoSans-BlackItalic.ttf"),
+        ]),
         .testTarget(
             name: "PinViewTests",
             dependencies: ["PinView"],

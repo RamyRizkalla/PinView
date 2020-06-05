@@ -60,6 +60,7 @@
 		773A0D752481630100889960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		773A0D782481630100889960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		773A0D7A2481630100889960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D13D96248ABBCB00527EC4 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 		2D964A412470A60600D3D292 /* PinView */ = {
 			isa = PBXGroup;
 			children = (
+				77D13D96248ABBCB00527EC4 /* NunitoSans-BlackItalic.ttf */,
 				2D964A452470A60700D3D292 /* Global */,
 				2D964A482470A60700D3D292 /* Info.plist */,
 				2D964A492470A60700D3D292 /* PinView.h */,
