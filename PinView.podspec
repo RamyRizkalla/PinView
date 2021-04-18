@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = "Ramy Rizkalla"
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "12.0"
   spec.swift_versions = "5.0"
   spec.source       = { :git => "https://github.com/RamyRizkalla/PinView.git", :tag => "#{spec.version}" }
   spec.source_files  = "Sources", "Sources/PinView/**/*.{h,m,swift}"

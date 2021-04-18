@@ -60,14 +60,18 @@ class PinTextField: UITextField {
     }
     
     func hideBackground() {
-        layer.borderWidth = 0.0
-        layer.borderColor = UIColor.clear.cgColor
-        backgroundColor = .clear
+//        layer.borderWidth = 0.0
+//        layer.borderColor = UIColor.clear.cgColor
+//        backgroundColor = .white
+        addBottomBorder()
+
     }
     
     func showBackground(borderWidth: CGFloat, borderColor: UIColor, background: UIColor) {
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
         backgroundColor = background
+//        addBottomBorder()
+
     }
 }

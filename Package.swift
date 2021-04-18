@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "PinView",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -25,8 +25,12 @@ let package = Package(
             dependencies: [],
             path: "Sources"),
         .testTarget(
-            name: "PinViewTests",
+            name: "Tests",
             dependencies: ["PinView"],
-            path: "PinViewTests"),
+            path: "Tests"),
+        .testTarget(
+            name: "UITests",
+            dependencies: ["PinView"],
+            path: "UITests"),
     ]
 )
